@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+    <h2 contenteditable data-heading="About us" class="h1">About us</h2>
+
+
+ <head>
+    <script src="js.js"></script>
+    
+ 
+ <style>   
+  
+html,
+body {
+	width: 100%;
+	height: 100%;
+	background:linear-gradient(10deg, rgba(244,235,160,1) 43%,rgba(192,250,202,1) 43%);
+}
+
+.h1 {	
+	font-family: 'CoreCircus', sans-serif;
+	text-transform: uppercase;
+	font-size: 50px;
+	text-align: left;
+	line-height: 1;
+	margin: 0;
+	top: 50%;
+	left: 50%;
+	transform: translate();
+	position:unset;
+	color: $red;
+	text-shadow: 
+			-1px -1px 0 $purple, 1px -1px 0 $purple, -1px 1px 0 $purple, 1px 1px 0 $purple, 
+			1px 0px 0px $green, 0px 1px 0px $green, 2px 1px 0px $green, 1px 2px 0px $green, 3px 2px 0px $green, 2px 3px 0px $green, 4px 3px 0px $green, 3px 4px 0px $green, 5px 4px 0px $green,
+			3px 5px 0px $purple, 6px 5px 0px $purple, 
+			-1px 2px 0 black, 0 3px 0 $purple, 1px 4px 0 $purple, 2px 5px 0px $purple,
+			2px -1px 0 $purple, 3px 0 0 $purple, 4px 1px 0 $purple, 5px 2px 0px $purple, 6px 3px 0 $purple, 7px 4px 0 $purple,
+		10px 10px 4px #dac249;
+	
+	&:after,
+	&:before {
+		content: attr(data-heading);
+		position: absolute;
+		overflow: hidden;
+		left: 0;		
+		width: 100%;
+		top: 0;
+		z-index: 5;
+	}
+	
+	&:before {
+		
+		text-shadow: 
+			-1px -1px 0 $darkred, 1px -1px 0 $darkred, -1px 1px 0 $darkred, 1px 1px 0 $darkred, 
+			1px 0px 0px $orange, 0px 1px 0px $orange, 2px 1px 0px $orange, 1px 2px 0px $orange, 3px 2px 0px $orange, 2px 3px 0px $orange, 4px 3px 0px $orange, 3px 4px 0px $orange, 5px 4px 0px $orange,
+			3px 5px 0px $darkred, 6px 5px 0px $darkred, 
+			-1px 2px 0 black, 0 3px 0 $darkred, 1px 4px 0 $darkred, 2px 5px 0px $darkred,
+			2px -1px 0 $darkred, 3px 0 0 $darkblue, 4px 1px 0 $darkred, 5px 2px 0px $darkred, 6px 3px 0 $darkred, 7px 4px 0 $darkred,
+			10px 10px 4px rgba(#6af177, .8);
+		color: $green;
+		height: 66%;
+	}
+	
+	&:after {
+		height: 33%;
+		color: $blue;
+	    text-shadow: 
+			-1px -1px 0 $darkblue, 1px -1px 0 $darkblue, -1px 1px 0 $darkblue, 1px 1px 0 $darkblue, 
+			1px 0px 0px $red, 0px 1px 0px $red, 2px 1px 0px $red, 1px 2px 0px $red, 3px 2px 0px $red, 2px 3px 0px $red, 4px 3px 0px $red, 3px 4px 0px $red, 5px 4px 0px $red,
+			3px 5px 0px $darkblue, 6px 5px 0px $darkblue, 
+			-1px 2px 0 black, 0 3px 0 $darkblue, 1px 4px 0 $darkblue, 2px 5px 0px $darkblue,
+			2px -1px 0 $darkblue, 3px 0 0 $darkblue, 4px 1px 0 $darkblue, 5px 2px 0px $darkblue, 6px 3px 0 $darkblue, 7px 4px 0 $darkblue;
+	}
+}
+
+/*
+ * Webfont: CoreCircus by S-Core
+ * URL: http://www.myfonts.com/fonts/s-core/core-circus/regular/
+ * Copyright: Copyright (c) 2013 by S-Core Co., Ltd.. All rights reserved.
+ * Licensed pageviews: 10,000
+*
+ * Webfont: CoreCircus2DDot1 by S-Core
+ * URL: http://www.myfonts.com/fonts/s-core/core-circus/dot1/
+ * Copyright: Copyright (c) 2013 by S-Core Co., Ltd.. All rights reserved.
+ * Licensed pageviews: 10,000
+*/
+
+@font-face {
+	font-family: 'CoreCircus2DDot1';
+	src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.eot');
+	src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.eot?#iefix') format('embedded-opentype'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.woff2') format('woff2'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.woff') format('woff'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'CoreCircus';
+	src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.eot');
+	src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.eot?#iefix') format('embedded-opentype'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.woff2') format('woff2'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.woff') format('woff'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.ttf') format('truetype');}
+
+	
+	@font-face {font-family: 'CoreCircusPierrot4';src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_13_0.eot');src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_13_0.eot?#iefix') format('embedded-opentype'),url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_13_0.woff2') format('woff2'),url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_13_0.woff') format('woff'),url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_13_0.ttf') format('truetype');}
+.col{ border-style:groove;
+      border-color: burlywood;
+      border-width:10px;
+      border-radius: 5%;
+
+}
+.house{border-style:groove;
+       border-color: burlywood;
+       border-width:13px;
+     
+     }
+</style>
+</html>
+<h3>
+<div>
+<p style="color:black; font-family:cursive;"> Our services started to flourish back in 1945 when I the co-founder of my broker business had encountered a problem. Back as a youngster in my late 20’s I wanted to find a house where I and my family can move into and settle in for good, I already finished school, got my master’s degree and have 10 years of experience with entrepreneurship.       </p>
+<img class="col" src="jojo.jpg">
+</div>
+
+<div>
+<p style="color:black; font-family:cursive;">Although my life was on the right track coming from my time in high school my biggest problem was finding a house. due to the fact that I had no person(broker) to guide me through what or which houses I would like to buy: all the decision making was thrown on me. I had no observation skills when it come to the quality of houses, so I ended up buying a crappy G+1 house that had little to no breathing area and, was a to some extent ugly: specifically the faint yellow paint of the exterior parts.</p>
+<img class="cod" style="border-style: groove; border-color: burlywood; border-radius: 5%;border-width: 11px;" src="house.jpg">
+<img class="cod" style="border-style: groove; border-color: burlywood; border-radius: 5%; border-width:11px" src="int.jpg">
+<p style="color:black; font-family:cursive;">So i used my entrepreneurship skills to establish a broker organization that helps in many fields including realestate shopping. the errors of my choices was due to my lack of intel, now we help people communicate with large business organization in order for them to meet their wants and to prevent them from repeating the same mistake we did. We are here to you and for you, we serve and help. We ensure your desicions in house chosing will be one you won't regret!</p>
+<img style="border-style: groove; border-color:crimson; border-radius: 5%; border-width:11px" src="Untitled.jpg">
+</div>
+</h3>
+</body>
+
+<div style="background-color: midnightblue;">
+	<footer>
+	<p style="color: #fff; font-family: Georgia, 'Times New Roman', Times, serif;">Find out more about us: </p>
+	<p style="color: #fff; font-family: Georgia, 'Times New Roman', Times, serif;">on Youtubue:<a title="Youtubue" style="border-style: solid; border-radius: 50px;color: #fff; font-family:cursive;" href="https://Youtubue.com">MJrealestate@Youtubue.com</span></a> </p>
+	<p style="color: #fff; font-family: Georgia, 'Times New Roman', Times, serif;">on Telegram:<a title="Telegram" style="border-style: solid; border-radius: 50px;color: #fff; font-family:cursive;" href="https://telegram.com">251@MJrealestate</span></a> </p>
+	<p style="color: #fff; font-family: Georgia, 'Times New Roman', Times, serif;">on Instergram:<a title="Instergram" style="border-style: solid; border-radius: 50px;color: #fff; font-family:cursive;" href="https://instergram.com">MJ realestate@instergram.com</span></a> </p>
+	
+	<p style="color:rgb(187, 255, 0); font-family: 'Times New Roman', Times, serif;">for any further information contact us at: +251931714256</p>
+	</div>
+	</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
